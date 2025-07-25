@@ -1,0 +1,21 @@
+{
+  "name": "ZaboPlated - Premium Restaurant Branding & Marketing Agency",
+  "short_name": "ZaboPlated",
+  "description": "Transform your restaurant with stunning menu designs, professional food photography, social media management, and complete brand transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f43f5e",
+  "icons": [
+    {
+      "src": "/images/zaboplated-logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/zaboplated-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+} 

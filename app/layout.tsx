@@ -149,9 +149,9 @@ export default function RootLayout({
               logo: "https://zaboplated.com/images/zaboplated-logo.jpg",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+1-555-123-4567",
+                telephone: "+1-407-247-1648",
                 contactType: "customer service",
-                email: "hello@zaboplated.com",
+                email: "contact@zaboplated.com",
               },
               address: {
                 "@type": "PostalAddress",

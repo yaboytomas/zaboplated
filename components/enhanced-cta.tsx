@@ -119,7 +119,7 @@ export function EnhancedCTA() {
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-sm text-gray-300 font-inter">Trusted by 100+ restaurants</p>
+                  <p className="text-sm text-gray-100 font-inter font-semibold drop-shadow-sm">Trusted by 100+ restaurants</p>
                 </div>
               </div>
             </ScrollAnimation>

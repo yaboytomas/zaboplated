@@ -78,7 +78,7 @@ export function Navigation() {
   const navItems = [
     { name: "Home", href: "home" },
     { name: "Services", href: "services" },
-    { name: "Portfolio", href: "portfolio" },
+    { name: "Portfolio", href: "portfolio", isPage: true },
     { name: "About", href: "about" },
     { name: "Blog", href: "blog", isPage: true },
     { name: "Contact", href: "contact" },

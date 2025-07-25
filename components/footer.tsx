@@ -81,9 +81,9 @@ export function Footer() {
   }
 
   const contactInfo = [
-    { icon: Mail, text: "hello@zaboplated.com", color: "text-rose-300", href: "mailto:hello@zaboplated.com" },
-    { icon: Phone, text: "+1 (555) 123-4567", color: "text-pink-300", href: "tel:+15551234567" },
-    { icon: MapPin, text: "Los Angeles, CA", color: "text-purple-300", href: "#" },
+    { icon: Mail, text: "contact@zaboplated.com", color: "text-rose-300", href: "mailto:contact@zaboplated.com" },
+    { icon: Phone, text: "+1-407-247-1648", color: "text-pink-300", href: "tel:+14072471648" },
+    { icon: MapPin, text: "Orlando, FL", color: "text-purple-300", href: "#" },
   ]
 
   return (
@@ -103,7 +103,7 @@ export function Footer() {
                 alt="ZaboPlated Logo"
                 width={120}
                 height={60}
-                className="h-8 w-auto object-contain filter brightness-0 invert"
+                className="h-8 w-auto object-contain"
               />
               <div className="h-8 w-px bg-gradient-to-b from-rose-300 via-pink-300 to-purple-300" />
               <span className="text-sm font-bold bg-gradient-to-r from-rose-300 via-pink-300 to-purple-300 bg-clip-text text-transparent font-outfit">

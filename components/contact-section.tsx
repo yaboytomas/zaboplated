@@ -19,10 +19,38 @@ export function ContactSection() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Failed to send message')
+      }
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        restaurant: "",
+        service: "",
+        message: "",
+      })
+
+      alert('Message sent successfully! We\'ll get back to you soon.')
+    } catch (error) {
+      console.error("Form submission error:", error)
+      alert('Failed to send message. Please try again.')
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -36,19 +64,19 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "hello@zaboplated.com",
+      details: "contact@zaboplated.com",
       description: "Send us an email anytime!",
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+1 (407) 247-1648",
       description: "Mon-Fri from 9am to 6pm",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: "Los Angeles, CA",
+      details: "Orlando, FL",
       description: "We serve restaurants nationwide",
     },
   ]
@@ -144,7 +172,7 @@ export function ContactSection() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+1-407-247-1648"
                       />
                     </div>
                     <div>

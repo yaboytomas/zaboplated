@@ -92,9 +92,20 @@ export function ContactFormValidation() {
 
     setIsSubmitting(true)
 
-    // Simulate API call
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Failed to send message')
+      }
+
       setIsSubmitted(true)
       setFormData({
         name: "",
@@ -106,6 +117,8 @@ export function ContactFormValidation() {
       })
     } catch (error) {
       console.error("Form submission error:", error)
+      // You could add error handling here, like showing a toast notification
+      alert('Failed to send message. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -131,21 +144,21 @@ export function ContactFormValidation() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "hello@zaboplated.com",
+      details: "contact@zaboplated.com",
       description: "Send us an email anytime!",
-      href: "mailto:hello@zaboplated.com",
+      href: "mailto:contact@zaboplated.com",
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+1-407-247-1648",
       description: "Mon-Fri from 9am to 6pm",
-      href: "tel:+15551234567",
+      href: "tel:+14072471648",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: "Los Angeles, CA",
+      details: "Orlando, FL",
       description: "We serve restaurants nationwide",
       href: "#",
     },
@@ -280,7 +293,7 @@ export function ContactFormValidation() {
                         className={`border-rose-200 focus:border-rose-500 focus:ring-rose-500 ${
                           errors.phone ? "border-red-500" : ""
                         }`}
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+1-407-247-1648"
                       />
                       {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
                     </div>

@@ -101,16 +101,34 @@ export function ContactSection() {
               {contactInfo.map((info, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-gradient-to-br from-rose-500 to-pink-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                        <info.icon className="h-6 w-6 text-white" />
+                    {info.title === "Visit Us" ? (
+                      <a 
+                        href="https://maps.google.com/?q=Orlando,FL" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-start space-x-4 group cursor-pointer"
+                      >
+                        <div className="bg-gradient-to-br from-rose-500 to-pink-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                          <info.icon className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-gray-900 mb-1 group-hover:text-rose-600 transition-colors duration-300">{info.title}</h3>
+                          <p className="text-rose-600 font-medium mb-1">{info.details}</p>
+                          <p className="text-sm text-gray-600">{info.description}</p>
+                        </div>
+                      </a>
+                    ) : (
+                      <div className="flex items-start space-x-4">
+                        <div className="bg-gradient-to-br from-rose-500 to-pink-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                          <info.icon className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h3>
+                          <p className="text-rose-600 font-medium mb-1">{info.details}</p>
+                          <p className="text-sm text-gray-600">{info.description}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h3>
-                        <p className="text-rose-600 font-medium mb-1">{info.details}</p>
-                        <p className="text-sm text-gray-600">{info.description}</p>
-                      </div>
-                    </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}

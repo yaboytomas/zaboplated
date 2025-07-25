@@ -160,7 +160,7 @@ export function ContactFormValidation() {
       title: "Visit Us",
       details: "Orlando, FL",
       description: "We serve restaurants nationwide",
-      href: "#",
+      href: "https://maps.google.com/?q=Orlando,FL",
     },
   ]
 

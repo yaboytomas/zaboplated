@@ -39,7 +39,7 @@ export function PortfolioSection() {
       id: 2,
       title: "Craft Cocktail Bar Social Campaign",
       category: "social-media",
-      image: "/placeholder.svg?height=400&width=600&text=Cocktail+Bar+Social+Media",
+      image: "/images/portfolio/cocktail-bar-social.png",
       description: "Social media content creation and management for a trendy cocktail bar.",
       tags: ["Social Media", "Photography", "Video Content"],
       results: "+200% Instagram followers",
@@ -53,15 +53,15 @@ export function PortfolioSection() {
       outcome:
         "Within six months, the bar saw a 200% increase in Instagram followers and a significant boost in brand awareness. Social media became a key driver of foot traffic and revenue.",
       additionalImages: [
-        "/placeholder.svg?height=400&width=600&text=Social+Media+Post+1",
-        "/placeholder.svg?height=400&width=600&text=Social+Media+Post+2",
+        "/images/portfolio/cocktail-bar-post1.png",
+        "/images/portfolio/cocktail-bar-post2.png",
       ],
     },
     {
       id: 3,
       title: "Farm-to-Table Restaurant Reels",
       category: "video",
-      image: "/placeholder.svg?height=400&width=600&text=Farm+to+Table+Video+Content",
+      image: "/images/portfolio/farm-table-video.png",
       description: "Behind-the-scenes video content showcasing fresh ingredients and cooking process.",
       tags: ["Video Production", "Content Strategy"],
       results: "1M+ views on TikTok",
@@ -75,15 +75,15 @@ export function PortfolioSection() {
       outcome:
         "The video reels went viral, generating over 1 million views on TikTok and significantly increasing brand awareness. The restaurant saw a surge in reservations and positive customer feedback.",
       additionalImages: [
-        "/placeholder.svg?height=400&width=600&text=Video+Still+1",
-        "/placeholder.svg?height=400&width=600&text=Video+Still+2",
+        "/images/portfolio/farm-table-still1.png",
+        "/images/portfolio/farm-table-still2.png",
       ],
     },
     {
       id: 4,
       title: "Artisan Bakery Brand Identity",
       category: "branding",
-      image: "/placeholder.svg?height=400&width=600&text=Artisan+Bakery+Branding",
+      image: "/images/portfolio/artisan-bakery-branding.png",
       description: "Complete brand transformation for a local bakery including logo, packaging, and signage.",
       tags: ["Brand Identity", "Packaging Design", "Signage"],
       results: "+60% brand recognition",
@@ -97,15 +97,15 @@ export function PortfolioSection() {
       outcome:
         "Within a year, the bakery saw a 60% increase in brand recognition and a significant improvement in customer perception. The new brand identity helped the bakery stand out in a competitive market.",
       additionalImages: [
-        "/placeholder.svg?height=400&width=600&text=Packaging+Design",
-        "/placeholder.svg?height=400&width=600&text=Signage+Mockup",
+        "/images/portfolio/artisan-bakery-packaging.png",
+        "/images/portfolio/artisan-bakery-signage.png",
       ],
     },
     {
       id: 5,
       title: "Seasonal Menu Photography",
       category: "photography",
-      image: "/placeholder.svg?height=400&width=600&text=Seasonal+Menu+Photography",
+      image: "/images/portfolio/seasonal-menu-photography.png",
       description: "Professional food photography for seasonal menu launch.",
       tags: ["Food Photography", "Menu Design"],
       results: "+25% seasonal sales",
@@ -119,15 +119,15 @@ export function PortfolioSection() {
       outcome:
         "The restaurant saw a 25% increase in seasonal sales after launching the new menu with the professional food photography. Customers were drawn to the visually appealing images, resulting in higher order values.",
       additionalImages: [
-        "/placeholder.svg?height=400&width=600&text=Dish+Photo+1",
-        "/placeholder.svg?height=400&width=600&text=Dish+Photo+2",
+        "/images/portfolio/seasonal-dish1.png",
+        "/images/portfolio/seasonal-dish2.png",
       ],
     },
     {
       id: 6,
       title: "Coffee Shop Social Strategy",
       category: "social-media",
-      image: "/placeholder.svg?height=400&width=600&text=Coffee+Shop+Social+Strategy",
+      image: "/images/portfolio/coffee-shop-social.png",
       description: "Comprehensive social media strategy and daily content creation.",
       tags: ["Social Strategy", "Content Creation", "Community Management"],
       results: "+150% engagement rate",
@@ -141,8 +141,8 @@ export function PortfolioSection() {
       outcome:
         "Within three months, the coffee shop saw a 150% increase in engagement rate and a significant boost in brand awareness. Social media became a valuable tool for connecting with customers and promoting the coffee shop's unique offerings.",
       additionalImages: [
-        "/placeholder.svg?height=400&width=600&text=Social+Media+Post+3",
-        "/placeholder.svg?height=400&width=600&text=Social+Media+Post+4",
+        "/images/portfolio/coffee-shop-post3.png",
+        "/images/portfolio/coffee-shop-post4.png",
       ],
     },
   ]
@@ -273,6 +273,7 @@ export function PortfolioSection() {
         <div className="text-center mt-8 sm:mt-12">
           <Button
             size="lg"
+            onClick={() => window.location.href = '/portfolio'}
             className="bg-gradient-to-r from-purple-500 via-pink-500 to-rose-600 hover:from-purple-600 hover:via-pink-600 hover:to-rose-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
           >
             View Full Portfolio

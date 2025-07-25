@@ -10,10 +10,10 @@ export function FloatingElements() {
     const icons = [Sparkles, Heart, Star, Utensils]
     const newElements = Array.from({ length: 8 }, (_, i) => ({
       id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      icon: icons[Math.floor(Math.random() * icons.length)],
-      delay: Math.random() * 5,
+      x: (i * 12 + 15) % 100,
+      y: (i * 18 + 20) % 100,
+      icon: icons[i % icons.length],
+      delay: (i * 0.6) % 5,
     }))
     setElements(newElements)
   }, [])

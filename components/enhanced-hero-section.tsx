@@ -47,10 +47,10 @@ export function EnhancedHeroSection() {
             key={i}
             className="absolute animate-float-slow opacity-20"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${(i * 8 + 10) % 100}%`,
+              top: `${(i * 12 + 15) % 100}%`,
               animationDelay: `${i * 0.5}s`,
-              animationDuration: `${4 + Math.random() * 3}s`,
+              animationDuration: `${4 + (i % 3)}s`,
             }}
           >
             <div className="w-2 h-2 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full"></div>

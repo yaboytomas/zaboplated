@@ -64,7 +64,7 @@ export default function BlogPage() {
       title: "5 Common Restaurant Branding Mistakes That Are Costing You Customers",
       excerpt:
         "Avoid these critical branding mistakes that could be driving potential customers away from your restaurant.",
-      image: "/placeholder.svg?height=300&width=400&text=Branding+Mistakes",
+      image: "/images/blog/branding-mistakes.png",
       category: "Branding",
       date: "2024-01-01",
       readTime: "6 min read",
@@ -78,7 +78,7 @@ export default function BlogPage() {
       title: "Creating Seasonal Menus That Drive Revenue",
       excerpt:
         "Learn how to design seasonal menus that not only reflect the time of year but also maximize your profits.",
-      image: "/placeholder.svg?height=300&width=400&text=Seasonal+Menu",
+      image: "/images/blog/seasonal-menu.png",
       category: "Menu Design",
       date: "2023-12-28",
       readTime: "8 min read",
@@ -92,7 +92,7 @@ export default function BlogPage() {
       title: "Why Video Content is Essential for Restaurant Marketing in 2024",
       excerpt:
         "Discover how video content can transform your restaurant's marketing strategy and attract more customers.",
-      image: "/placeholder.svg?height=300&width=400&text=Video+Content",
+      image: "/images/blog/video-content.png",
       category: "Video Marketing",
       date: "2023-12-25",
       readTime: "4 min read",

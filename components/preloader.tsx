@@ -16,7 +16,7 @@ export function Preloader() {
           setTimeout(() => setIsLoading(false), 500)
           return 100
         }
-        return prev + Math.random() * 15
+        return prev + 10 + (prev % 5)
       })
     }, 100)
 
@@ -75,10 +75,10 @@ export function Preloader() {
               key={i}
               className="absolute animate-float-slow opacity-20"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                left: `${(i * 15 + 10) % 100}%`,
+                top: `${(i * 20 + 15) % 100}%`,
                 animationDelay: `${i * 0.5}s`,
-                animationDuration: `${3 + Math.random() * 2}s`,
+                animationDuration: `${3 + (i % 3)}s`,
               }}
             >
               <div className="w-4 h-4 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full"></div>

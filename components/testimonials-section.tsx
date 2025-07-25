@@ -34,7 +34,7 @@ export function TestimonialsSection() {
       id: 3,
       name: "Sarah Thompson",
       title: "Owner, Farm Fresh Kitchen",
-      image: "/images/testimonials/sarah-thompson.png",
+      image: "/images/testimonials/sara-thompson.png",
       rating: 5,
       text: "Working with ZaboPlated was the best decision we made for our restaurant. Their video content went viral and brought us customers from all over the city. The team is professional, creative, and truly cares about our success.",
       results: "1M+ video views",

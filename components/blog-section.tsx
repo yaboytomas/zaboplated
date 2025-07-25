@@ -13,7 +13,7 @@ export function BlogSection() {
       title: "10 Menu Design Trends That Will Boost Your Restaurant Sales in 2024",
       excerpt:
         "Discover the latest menu design trends that are proven to increase customer spending and improve the dining experience.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/blog/menu-design-trends.png",
       category: "Menu Design",
       date: "2024-01-15",
       readTime: "5 min read",
@@ -24,7 +24,7 @@ export function BlogSection() {
       title: "How to Create Instagram-Worthy Food Photography on a Budget",
       excerpt:
         "Learn professional food photography techniques that will make your dishes look irresistible on social media.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/blog/food-photography-tips.png",
       category: "Photography",
       date: "2024-01-10",
       readTime: "7 min read",
@@ -35,7 +35,7 @@ export function BlogSection() {
       title: "The Ultimate Guide to Restaurant Social Media Marketing",
       excerpt:
         "A comprehensive guide to building a strong social media presence that drives foot traffic and increases sales.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/blog/social-media-marketing.png",
       category: "Social Media",
       date: "2024-01-05",
       readTime: "10 min read",

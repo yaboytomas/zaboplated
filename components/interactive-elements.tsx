@@ -32,12 +32,12 @@ export function InteractiveBackground() {
     const icons = [Sparkles, Heart, Star, Utensils, Camera, Palette]
     const newParticles = Array.from({ length: 20 }, (_, i) => ({
       id: i,
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      size: Math.random() * 20 + 10,
-      opacity: Math.random() * 0.3 + 0.1,
-      speed: Math.random() * 2 + 1,
-      icon: icons[Math.floor(Math.random() * icons.length)],
+      x: ((i * 7 + 15) % 100) * (window.innerWidth / 100),
+      y: ((i * 11 + 20) % 100) * (window.innerHeight / 100),
+      size: 10 + (i % 10),
+      opacity: 0.1 + (i % 3) * 0.1,
+      speed: 1 + (i % 2),
+      icon: icons[i % icons.length],
     }))
     setParticles(newParticles)
   }, [])

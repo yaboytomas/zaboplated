@@ -105,6 +105,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#f43f5e" />
         
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="CFHNqfdLb4hxfOBVB924bvixa-kTM-hxYzKDFAMRqBY" />
+        
         {/* Enhanced Social Media Meta Tags */}
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

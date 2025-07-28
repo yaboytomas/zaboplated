@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zaboplated.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+
+# Allow important pages
+Allow: /
+Allow: /portfolio
+Allow: /blog
+Allow: /blog/*
+Allow: /images/*
+Allow: /manifest.json 
